@@ -82,9 +82,10 @@
   svg{width:100%;height:auto;display:block}
   .split{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:1.6rem}
   @media(max-width:760px){.split{grid-template-columns:1fr !important}}
-  .force{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid rgba(139,147,167,.16);padding:.68rem 0}
+  .force{display:flex;justify-content:space-between;align-items:flex-start;gap:14px;border-bottom:1px solid rgba(139,147,167,.16);padding:.68rem 0}
   .force .fname{font-size:.94rem}
-  .force .frate{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase}
+  .force .fdesc{font-size:.78rem;color:var(--dim);margin-top:.2rem;line-height:1.45}
+  .force .frate{font-family:'JetBrains Mono',monospace;font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;white-space:nowrap;margin-top:.2rem}
   .lo{color:var(--green)}.md{color:var(--amber)}.hi{color:var(--red)}
   ul.bare{list-style:none}
   ul.bare li{padding:.5rem 0;border-bottom:1px solid rgba(139,147,167,.14);font-size:.9rem;color:var(--dim)}
@@ -161,10 +162,10 @@
   <div class="kicker rv">03 / 13 <span>— THE VALUE CREATION HYPOTHESIS</span></div>
   <h2 class="rv d1">Why subscriptions create <span class="red">more value.</span></h2>
   <div class="cards">
-    <div class="card rv d1"><span class="tag">ARR</span><h3>Recurring revenue</h3><p>Predictable, growing cash flow replacing lumpy upgrade-cycle revenue.</p></div>
-    <div class="card rv d2"><span class="tag">CLV</span><h3>Higher lifetime value</h3><p>A recurring fee over time generates more total revenue than a one-time purchase.</p></div>
-    <div class="card rv d3"><span class="tag">Access</span><h3>Lower barriers to entry</h3><p>$2,599 upfront → from $9.99/month. Converts pirates into legal subscribers, expands the market.</p></div>
-    <div class="card rv d4"><span class="tag">SaaS</span><h3>Continuous delivery</h3><p>Features ship instantly — strengthening the advantage with every release.</p></div>
+    <div class="card rv d1"><span class="tag">ARR</span><h3>Annual Recurring Revenue</h3><p>Predictable recurring cash flow replacing lumpy upgrade-cycle revenue.</p></div>
+    <div class="card rv d2"><span class="tag">CLV</span><h3>Higher lifetime value</h3><p>Long-term subscriptions generate more revenue per customer than a one-time purchase.</p></div>
+    <div class="card rv d3"><span class="tag">Access</span><h3>Lower barriers to entry</h3><p>Monthly pricing expands the customer base and reduces piracy — $2,599 upfront → from $9.99/month.</p></div>
+    <div class="card rv d4"><span class="tag">SaaS</span><h3>Continuous delivery</h3><p>Regular updates improve products and strengthen retention.</p></div>
   </div>
   <p class="lede rv d4" style="margin-top:1.6rem">The hypothesis: accept <strong>short-term revenue and margin pressure</strong> in exchange for higher customer lifetime value, predictable cash flows, stronger advantages — and ultimately <strong>economic profit above the cost of capital</strong>.</p>
 </section>
@@ -176,11 +177,11 @@
   <div class="split">
     <div class="panel rv d1">
       <span class="csub">FIVE FORCES · 2012</span>
-      <div class="force"><span class="fname">Threat of new entrants</span><span class="frate lo">LOW</span></div>
-      <div class="force"><span class="fname">Supplier power</span><span class="frate lo">LOW</span></div>
-      <div class="force"><span class="fname">Buyer power</span><span class="frate md">MODERATE</span></div>
-      <div class="force"><span class="fname">Substitutes</span><span class="frate md">MODERATE</span></div>
-      <div class="force"><span class="fname">Rivalry</span><span class="frate md">MODERATE</span></div>
+      <div class="force"><div><div class="fname">Threat of new entrants</div><p class="fdesc">Strong brand, industry-standard products and significant R&amp;D capabilities created high barriers that were difficult for new competitors to overcome.</p></div><span class="frate lo">LOW</span></div>
+      <div class="force"><div><div class="fname">Supplier power</div><p class="fdesc">Adobe owned its intellectual property and controlled software distribution, limiting supplier influence over costs and strategy.</p></div><span class="frate lo">LOW</span></div>
+      <div class="force"><div><div class="fname">Buyer power</div><p class="fdesc">Customers could delay upgrades, but professional users depended heavily on Adobe's tools, workflows and file formats.</p></div><span class="frate md">MODERATE</span></div>
+      <div class="force"><div><div class="fname">Substitutes</div><p class="fdesc">Free and lower-cost alternatives existed, but lacked Adobe's professional capabilities, ecosystem and industry adoption.</p></div><span class="frate md">MODERATE</span></div>
+      <div class="force"><div><div class="fname">Rivalry</div><p class="fdesc">Competition was driven by innovation rather than price — no competitor offered a fully integrated creative suite comparable to Adobe's ecosystem.</p></div><span class="frate md">MODERATE</span></div>
       <p class="note">HIGH BARRIERS: BRAND EQUITY · R&amp;D DEPTH · INDUSTRY-STANDARD FORMATS · DISTRIBUTION</p>
     </div>
     <div class="panel rv d2">
@@ -197,17 +198,27 @@
 
 <!-- 05 FRAMEWORKS II · platform, switching, scale -->
 <section data-n="05" data-year="2013">
-  <div class="kicker rv">05 / 13 <span>— STRATEGIC ANALYSIS · PLATFORM ECONOMICS, SWITCHING COSTS &amp; SCALE</span></div>
+  <div class="kicker rv">05 / 13 <span>— STRATEGIC ANALYSIS · PLATFORM ECONOMICS &amp; COMPETITIVE ADVANTAGE</span></div>
   <h2 class="rv d1">The economics of <span class="red">lock-in.</span></h2>
+  <p class="lede rv d1">Platform economics explain <strong>why Creative Cloud creates more value</strong> — and Adobe's competitive advantages explain why no one else could copy the move.</p>
   <div class="cards">
-    <div class="card rv d1"><span class="tag">Switching costs</span><h3>Files, formats, muscle memory</h3><p>Designers learn Adobe tools; files live in Adobe formats. Leaving means re-learning a career.</p></div>
-    <div class="card rv d2"><span class="tag">Network &amp; ecosystem effects</span><h3>More users → more value</h3><p>Users attract templates, plugins, integrations — clients, universities and agencies reinforce the standard.</p></div>
-    <div class="card rv d3"><span class="tag">Platform economics</span><h3>All Apps, one wallet</h3><p>Stock, Fonts, Behance, Libraries — cross-sell deepens lock-in and raises revenue per customer.</p></div>
+    <div class="card rv d1"><span class="tag">Switching costs</span><h3>Skills, files, workflows</h3><p>Adobe skills, files and workflows made switching costly. Leaving means re-learning a career.</p></div>
+    <div class="card rv d2"><span class="tag">Portfolio strategy</span><h3>All Apps, one wallet</h3><p>The All Apps plan increased revenue per customer through bundling and cross-selling.</p></div>
+    <div class="card rv d3"><span class="tag">Ecosystem lock-in</span><h3>Deeper with every file</h3><p>Adobe Fonts, Cloud Storage and Libraries made customers more dependent on the platform.</p></div>
     <div class="card rv d4"><span class="tag">Economies of scale</span><h3>Build once, sell to millions</h3><p>R&amp;D spread across the base; near-zero marginal cost; gross margin trends toward ~88%.</p></div>
   </div>
-  <div class="split">
+  <div class="split" style="grid-template-columns:1fr 1.6fr">
     <div class="panel rv d3"><div class="big"><span class="count" data-to="1.4" data-dec="1">0</span>M+<small>Creative Cloud subscribers by end of 2013 — scale arrived early</small></div></div>
-    <div class="panel rv d4"><div class="big white">RBV<small>Valuable, rare, inimitable, organised: Photoshop brand · PDF standard · creative ecosystem · customer data</small></div></div>
+    <div class="panel rv d4">
+      <span class="csub">ADOBE'S COMPETITIVE ADVANTAGES</span>
+      <ul class="bare">
+        <li><b>Industry-standard brand &amp; products</b> — Photoshop, Illustrator and Acrobat recognized as professional standards</li>
+        <li><b>Integrated creative ecosystem</b> — a connected suite of tools, not standalone products</li>
+        <li><b>Large professional user base</b> — designers, agencies, universities and enterprises already relied heavily on Adobe</li>
+        <li><b>Proprietary technology, file formats &amp; PDF leadership</b> — Adobe controlled key creative workflows and file standards</li>
+        <li><b>Innovation capability &amp; strong R&amp;D</b> — strong R&amp;D allowed Adobe to keep improving its products</li>
+      </ul>
+    </div>
   </div>
 </section>
 
@@ -247,6 +258,7 @@
   </div>
   <p class="note rv d3">INVESTED CAPITAL GREW MODESTLY VS REVENUE — THE SOURCE OF THE LATER ROIC EXPANSION · ≈ PENDING 10-K INPUTS</p>
   <div class="rv d3">
+  <p class="lede" style="margin-top:1.4rem"><strong>Managing what matters:</strong> Adobe had to abandon the metrics it had always used — and rebuild its measurement logic from scratch.</p>
   <div class="fromto">
     <div class="panel rv d1">
       <span class="csub">OLD MODEL · CREATIVE SUITE · LAGGING</span>
@@ -258,13 +270,18 @@
     <div class="panel rv d2" style="border-color:var(--red)">
       <span class="csub" style="color:var(--red)">NEW MODEL · CREATIVE CLOUD · LEADING</span>
       <ul class="bare">
-        <li>Annual Recurring Revenue (ARR)</li><li>Subscriber growth &amp; retention</li><li>Churn &amp; cohort behaviour</li><li>Monthly Recurring Revenue (MRR)</li><li>Customer Lifetime Value (CLV)</li>
+        <li>Annual Recurring Revenue (ARR)</li><li>Subscriber growth</li><li>Customer retention rate</li><li>Monthly Recurring Revenue (MRR)</li><li>Customer Lifetime Value (CLV)</li>
       </ul>
     </div>
   </div>
 
   </div>
-  <p class="lede rv d4" style="margin-top:1.2rem"><strong>Balanced Scorecard logic:</strong> leading indicators upstream, financial outcomes downstream. Executive pay re-anchored to ARR and subscribers, capital allocation pivoted to cloud &amp; R&amp;D, customer success became a first-class function, and Creative Suite was killed outright — no going back.</p>
+  <div class="cards rv d4" style="margin-top:1.2rem">
+    <div class="card"><span class="tag">Incentives realigned</span><h3>Pay follows the bet</h3><p>Executive compensation shifted from quarterly EPS to ARR growth and subscriber targets.</p></div>
+    <div class="card"><span class="tag">No going back</span><h3>Boats burned in 2013</h3><p>Adobe discontinued perpetual license sales entirely, forcing full organizational commitment to the new model.</p></div>
+    <div class="card"><span class="tag">Retention over acquisition</span><h3>A cancellation is a failure</h3><p>Customer success became a core function; a cancelled subscription was a failure, even if the customer had paid.</p></div>
+  </div>
+  <p class="lede rv d4" style="margin-top:1.2rem"><strong>Balanced Scorecard logic:</strong> leading indicators upstream, financial outcomes downstream — capital allocation pivoted to cloud &amp; R&amp;D.</p>
 </section>
 
 <!-- 08 J-CURVE -->
